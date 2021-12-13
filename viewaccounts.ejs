@@ -1,0 +1,21 @@
+<%- include('includes/header') %>
+    <div class="content">
+      <table id="customers">
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Account balance</th>
+          </tr>
+      <% items.forEach(function(items) { %>
+          <tr>
+            <td><%= items.name %></td>
+            <td><%= items.mobile %></td>
+            <td><%= items.accountbalance %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
